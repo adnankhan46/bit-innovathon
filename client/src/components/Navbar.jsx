@@ -19,7 +19,7 @@ function Navbar() {
 
 console.log(user)
   return (
-    <nav className="bg-zinc-900 text-white">
+    <nav className="bg-pink-600 text-white">
       <div className="flex items-center justify-between h-[60px] px-6 md:px-36">
         {/* Logo */}
         <div className="flex items-center gap-2 font-bold text-2xl"> <Link to="/">SheShield</Link>

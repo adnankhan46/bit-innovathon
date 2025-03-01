@@ -42,7 +42,9 @@ const SignUp = () => {
   
         if (res.ok) {
         localStorage.setItem("token", data.token); // Store token in localStorage
+        localStorage.setItem("user", data.user); // Store token in localStorage
         console.log("Stored Token:", localStorage.getItem("token")); // Print
+        console.log("Stored User:", localStorage.getItem("user")); // Print
          console.log("res is ok.")
          navigate("/home");
         } else {

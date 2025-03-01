@@ -2,12 +2,13 @@ import {Instagram, Linkedin} from 'lucide-react'
 
 const Footer = () => (
   <footer className="bg-zinc-100 text-black">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="flex flex-col md:flex-row w-full justify-between md:px-24 gap-14">
         <div className="booleanai">
           <div className="onlyElement">
           <h2 className='text-4xl font-extrabold font-outfit hover:text-[#243CB6]'>SheShield</h2>
-            <p className='my-2 text-gray-600'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum?</p>
+            <p className='my-2 text-gray-600'>One Tap for Safety,
+            Peace of Mind for Life.</p>
             <div className="social-list flex gap-4">
             <Instagram size={20} />
             <Linkedin size={20}/>
