@@ -6,7 +6,7 @@ const Footer = () => (
       <div className="flex flex-col md:flex-row w-full justify-between md:px-24 gap-14">
         <div className="booleanai">
           <div className="onlyElement">
-          <h2 className='text-4xl font-extrabold font-outfit hover:text-[#243CB6]'>Project Name</h2>
+          <h2 className='text-4xl font-extrabold font-outfit hover:text-[#243CB6]'>SheShield</h2>
             <p className='my-2 text-gray-600'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum?</p>
             <div className="social-list flex gap-4">
             <Instagram size={20} />

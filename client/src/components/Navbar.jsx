@@ -22,7 +22,7 @@ console.log(user)
     <nav className="bg-zinc-900 text-white">
       <div className="flex items-center justify-between h-[60px] px-6 md:px-36">
         {/* Logo */}
-        <div className="flex items-center gap-2 font-bold text-2xl"> <Link to="/">Project Name</Link>
+        <div className="flex items-center gap-2 font-bold text-2xl"> <Link to="/">SheShield</Link>
         </div>
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-16 font-semibold text-lg">
