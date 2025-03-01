@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navigate } from 'react-router-dom';
+import { Navigate } from 'react-router';
 
 const PrivateRoute = ({ children }) => {
   const isAuthenticated = localStorage.getItem('token') ? true : false;
