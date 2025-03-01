@@ -4,7 +4,7 @@ import cors from "cors";
 import connectDB from "./config/db.js";
 import authRoutes from "./routes/authRoutes.js";
 import bodyParser from "body-parser";
-
+import alertRoutes from "./routes/alertRoutes.js";
 ;
 
 dotenv.config();
@@ -19,7 +19,7 @@ app.use(express.json());
 connectDB();
 
 app.use("/api/auth", authRoutes);
-
+app.use("/api", alertRoutes);
 
 app.get("/", (req, res)=>{
     res.send("Working");
