@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { Bell, User, Menu } from "lucide-react"
 import CanvasDetection from '../components/CanvasDetection'
-// import SOSButton from '../components/SOSButton'
+import SOSButton from '../components/SOSButton'
 import QuickAccess from '../components/QUickAccess'
 import SafetyTimer from '../components/SafetyTimer'
 
@@ -44,7 +44,7 @@ const Home = () => {
             <div className="bg-white rounded-xl shadow-md p-6">
               <h2 className="text-2xl font-bold text-purple-800 mb-4">Emergency Tools</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {/* <SOSButton triggerSOS={triggerSOS} /> */}
+                <SOSButton triggerSOS={triggerSOS} />
                 {/* <LocationTracker onLocationUpdate={handleLocationUpdate} /> */}
               </div> 
             </div>
