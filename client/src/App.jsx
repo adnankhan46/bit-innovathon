@@ -1,7 +1,7 @@
 import {BrowserRouter, Routes, Route} from "react-router";
 import Home from "./pages/Home";
 import LandingPage from "./pages/LandingPage";
-import SignUp from "./pages/SignUp";
+import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import Navbar from "./components/Navbar";
 import PrivateRoute from "./components/PrivateRoute";
@@ -17,7 +17,7 @@ function App() {
     <Routes>
       <Route path="/" element={<LandingPage/>} />
       <Route path="/home" element={<PrivateRoute><Home/></PrivateRoute>} />
-      <Route path="/signup" element={<SignUp/>} />
+      <Route path="/signup" element={<Signup/>} />
       <Route path="/login" element={<Login/>} />
 
 
