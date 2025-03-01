@@ -9,6 +9,7 @@ const SignUp = () => {
       name: "",
       email: "",
       password: "",
+      tonumber: "",
     });
     console.log(formData); // checking form'
   
@@ -116,7 +117,19 @@ const SignUp = () => {
               </div>
   
               {/* Other Input Field */}
-              
+              <div className="space-y-2">
+                <label htmlFor="number" className="text-sm font-medium">Enter a Number to Send Emergency Message</label>
+                <input
+                  type="number"
+                  id="tonumber"
+                  name="tonumber"
+                  placeholder="Emergency Number"
+                  onChange={handleChange}
+                  required
+                  className="flex h-10 w-full rounded-md border border-zinc-200 px-3 py-2 text-sm placeholder:text-zinc-500 focus-visible:ring-2 focus-visible:ring-zinc-950"
+                />
+              </div>
+  
   
               {/* Error message */}
               {error && <div className="rounded-md bg-red-50 p-3 text-sm text-red-500">{error}</div>}
