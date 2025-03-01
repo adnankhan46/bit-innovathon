@@ -30,7 +30,7 @@ const SignUp = () => {
       console.log("Form Data from handleSubmit:", formData); // Debugging
   
       try {
-        const res = await fetch("http://localhost:5000/api/auth/signup", {
+        const res = await fetch("/api/auth/signup", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(formData),
@@ -40,9 +40,10 @@ const SignUp = () => {
         console.log("Server Response:", data); // Debugging
   
         if (res.ok) {
-          localStorage.setItem("token", data.token);
-        //   setUser(data.user);
-          navigate("/dashboard/" + data.user.role.toLowerCase());
+        localStorage.setItem("token", data.token); // Store token in localStorage
+        console.log("Stored Token:", localStorage.getItem("token")); // Print
+         console.log("res is ok.")
+         navigate("/home");
         } else {
           setError(data.message || "Signup failed. Please try again.");
           alert(data.message || "Signup failed. Please try again.");
@@ -71,7 +72,7 @@ const SignUp = () => {
               <p className="text-zinc-500">Enter your information to create your account</p>
             </div>
   
-            <form  className="space-y-4">
+            <form onSubmit={handleSubmit} className="space-y-4">
               {/* Name field */}
               <div className="space-y-2">
                 <label htmlFor="name" className="text-sm font-medium">Name</label>

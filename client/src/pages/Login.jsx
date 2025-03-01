@@ -20,17 +20,19 @@ const Login = () => {
       setError("")
   
       try {
-        const res = await fetch("http://localhost:5000/api/auth/login", {
+        const res = await fetch("/api/auth/login", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(formData),
         })
-        const data = await res.json()
+        const data = await res.json();
+        console.log("Server Response:", data); // Debugging
   
         if (res.ok) {
           localStorage.setItem("token", data.token)
+          console.log("Login res is OK.")
+          navigate("/home")
         //   setUser(data.user)
-          navigate("/dashboard/" + data.user.role.toLowerCase())
         } else {
           setError(data.message || "Login failed. Please try again.")
         }
@@ -57,7 +59,7 @@ const Login = () => {
               <p className="text-zinc-500">Enter your credentials to access your account</p>
             </div>
   
-            <form  className="space-y-4">
+            <form onSubmit={handleSubmit} className="space-y-4">
               {/* Email field */}
               <div className="space-y-2">
                 <label
