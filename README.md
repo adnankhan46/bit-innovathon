@@ -29,8 +29,8 @@ Ensure you have the following installed:
 ### Installation Steps
 1. **Clone the Repository:**
    ```sh
-   git clone https://github.com/your-username/woman-safety-app.git
-   cd woman-safety-app
+   git clone https://github.com/adnankhan46/bit-innovathon.git
+   cd bit-innovathon  # root dir
    ```
 2. **Install Dependencies:**
    ```sh
@@ -77,7 +77,8 @@ Ensure you have the following installed:
 
 
 ## Make Sure
-Some issue might be there.**(RUN is Desktop)**
+Some issue might be there.
+**Recommended: RUN in Desktop**
 
 ---
 
